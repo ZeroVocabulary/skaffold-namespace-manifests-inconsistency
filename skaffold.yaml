@@ -1,0 +1,9 @@
+apiVersion: skaffold/v2beta19
+kind: Config
+build:
+  artifacts: []
+deploy:
+  kubectl:
+    manifests:
+      - kubernetes-configs\*
+    defaultNamespace: test
